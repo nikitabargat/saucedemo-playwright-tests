@@ -1,0 +1,32 @@
+services:
+  # ── Run tests on Chromium ────────────────────────────────
+  tests-chromium:
+    build: .
+    container_name: saucedemo-tests-chromium
+    environment:
+      - BASE_URL=https://www.saucedemo.com
+      - HEADLESS=true
+    command: >
+      pytest
+        --browser chromium
+        --alluredir=allure-results
+        -v --tb=short
+    volumes:
+      - ./allure-results:/app/allure-results
+      - ./screenshots:/app/screenshots
+
+  # ── Run tests on Firefox ─────────────────────────────────
+  tests-firefox:
+    build: .
+    container_name: saucedemo-tests-firefox
+    environment:
+      - BASE_URL=https://www.saucedemo.com
+      - HEADLESS=true
+    command: >
+      pytest
+        --browser firefox
+        --alluredir=allure-results-firefox
+        -v --tb=short
+    volumes:
+      - ./allure-results-firefox:/app/allure-results-firefox
+      - ./screenshots:/app/screenshots

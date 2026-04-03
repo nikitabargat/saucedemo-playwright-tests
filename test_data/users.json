@@ -1,0 +1,64 @@
+{
+  "valid_users": {
+    "standard_user": {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "description": "Default user with full access"
+    },
+    "performance_glitch_user": {
+      "username": "performance_glitch_user",
+      "password": "secret_sauce",
+      "description": "User with slow response times"
+    }
+  },
+  "invalid_users": {
+    "locked_out_user": {
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "expected_error": "Epic sadface: Sorry, this user has been locked out.",
+      "description": "Locked out user"
+    },
+    "invalid_password": {
+      "username": "standard_user",
+      "password": "wrong_password",
+      "expected_error": "Epic sadface: Username and password do not match any user in this service",
+      "description": "Wrong password"
+    },
+    "empty_username": {
+      "username": "",
+      "password": "secret_sauce",
+      "expected_error": "Epic sadface: Username is required",
+      "description": "Empty username field"
+    },
+    "empty_password": {
+      "username": "standard_user",
+      "password": "",
+      "expected_error": "Epic sadface: Password is required",
+      "description": "Empty password field"
+    },
+    "empty_both": {
+      "username": "",
+      "password": "",
+      "expected_error": "Epic sadface: Username is required",
+      "description": "Both fields empty"
+    }
+  },
+  "checkout_info": {
+    "valid": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "postal_code": "10001"
+    }
+  },
+  "products": {
+    "total_count": 6,
+    "names": [
+      "Sauce Labs Backpack",
+      "Sauce Labs Bike Light",
+      "Sauce Labs Bolt T-Shirt",
+      "Sauce Labs Fleece Jacket",
+      "Sauce Labs Onesie",
+      "Test.allTheThings() T-Shirt (Red)"
+    ]
+  }
+}
