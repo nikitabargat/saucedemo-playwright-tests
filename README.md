@@ -4,7 +4,7 @@
 
 **Automated tests for [SauceDemo](https://www.saucedemo.com/) using Playwright + pytest + Python**
 
-[![Playwright Tests](https://github.com/nikitabargat/saucedemo-playwright-tests/actions/workflows/test.yml/badge.svg)](https://github.com/nikitabargat/saucedemo-playwright-tests/actions/workflows/test.yml)
+[![SauceDemo Playwright Tests](https://github.com/nikitabargat/saucedemo-playwright-tests/actions/workflows/test.yml/badge.svg)](https://github.com/nikitabargat/saucedemo-playwright-tests/actions/workflows/test.yml)
 ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-1.58-2EAD33?logo=playwright&logoColor=white)
 ![pytest](https://img.shields.io/badge/pytest-9.0-0A9EDC?logo=pytest&logoColor=white)
